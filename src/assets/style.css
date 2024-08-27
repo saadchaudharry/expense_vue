@@ -1,0 +1,108 @@
+body {
+    background-color: #f7f7f7;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.balance {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.transaction-history {
+    margin-top: 30px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.transaction-history li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.transaction-history li .text {
+    font-size: 1.2em;
+    flex: 1;
+}
+
+.transaction-history li .amount {
+    font-size: 1.2em;
+    width: 100px;
+    text-align: right;
+}
+
+.transaction-history li .remove-btn {
+    padding: 5px 10px;
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.transaction-history li.income .amount {
+    color: green;
+}
+
+.transaction-history li.expense .amount {
+    color: red;
+}
+
+
+.new-transaction {
+    margin-top: 30px;
+}
+
+.new-transaction input[type="text"],
+.new-transaction input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #000;
+    background: transparent;
+}
+
+.new-transaction button {
+    width: 100%;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    border: 2px solid #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.new-transaction button:hover {
+    background: #444;
+}
+
+.notification {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background: #008000;
+    color: #fff;
+    font-weight: bold;
+    display: none;
+}
